@@ -1,4 +1,4 @@
-# Twitter's "Who to Follow" Component in React with Tailwind ⚛️
+# X's "Who to Follow" Component in React with Tailwind ⚛️
 
 ## Key Features 🚀:
 
