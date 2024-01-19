@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: black;
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+@layer components {
+  .tw-followCard-Button {
+    @apply px-4 py-[6px] border-2 border-black bg-white text-black text-[13px] font-bold rounded-full hover:opacity-75 hover:transition;
+  }
+
+  .tw-followCard-text {
+    @apply block;
+  }
+
+  .tw-followCard-Button-IsFollowing {
+    @apply px-4 py-[6px] w-[140px] border-2 border-[#bbb] bg-opacity-100 text-white text-[13px] font-bold rounded-full;
+  }
+
+  .tw-followCard-Button-IsFollowing:hover {
+    @apply bg-[rgba(255,0,0,0.178)] text-[rgba(255,0,0)] border-[rgba(255,0,0)] transition;
+  }
+
+  .tw-followCard-Button-IsFollowing:hover .tw-followCard-text {
+    @apply hidden;
+  }
+
+  .tw-followCard-unFollow {
+    @apply hidden;
+  }
+  
+  .tw-followCard-Button-IsFollowing:hover .tw-followCard-unFollow {
+    @apply block;
+  }
+
+
+
+}
